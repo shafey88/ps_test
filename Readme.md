@@ -8,7 +8,7 @@
 
 ## Build & Run
 
-Use Ansible Galaxy to download the project, then build and run:
+Download the project, then build and run:
 ```bash
 ansible-playbook -i inventory.yml playbook.yml
 ```
