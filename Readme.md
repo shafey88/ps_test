@@ -1,13 +1,17 @@
-***Configuring the environment for ansible***
+# Configuring the environment for ansible
 
-For Ubuntu 18.04
+## Requirements
 
-install python-pip
+- python-pip
+- [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
+- docker
 
-install docker
+## Build & Run
 
-install ansible
-
+Use Ansible Galaxy to download the project, then build and run:
+```bash
+ansible-playbook -i inventory.yml playbook.yml
+```
 
 
 
