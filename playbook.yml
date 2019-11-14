@@ -1,0 +1,30 @@
+---
+- hosts: localhost
+  connection: local 
+  tasks:
+    - docker_container:
+            name: ubuntu
+            image: python
+            ports:
+              - "80:80"
+            command: ["sleep", "1d"]
+
+- name: Install nginx
+  hosts: ubuntu
+  roles:
+    - { role: geerlingguy.nginx }
+
+- hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+
+    - name: Test connect to container
+      uri:
+        url: "http://127.0.0.1:80"
+      register: req
+
+    - assert:
+        that:
+          - "req.status == 200"
+        msg: "Page must return a 200 response"
