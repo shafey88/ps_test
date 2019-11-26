@@ -14,9 +14,8 @@
   roles:
     - { role: geerlingguy.nginx }
 
-- hosts: localhost
-  connection: local
-  become: yes
+- hosts: ubuntu
+  connection: docker
   tasks:
 
     - name: Test connect to container
