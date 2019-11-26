@@ -9,12 +9,11 @@ Ubuntu 18.04
 
 ## Build & Run
 
-Download the project, then build and run:
-
 Clone geerlingguy.nginx role to folder with project
 ```bash
 git clone https://github.com/geerlingguy/ansible-role-nginx.git
 ```
+Build and run:
 ```bash
 ansible-playbook -i inventory.yml playbook.yml
 ```
