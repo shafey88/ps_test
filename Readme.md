@@ -11,7 +11,7 @@ Ubuntu 18.04
 
 Download the project, then build and run:
 
-Clone geerlingguy.nginx to folder with project
+Clone geerlingguy.nginx role to folder with project
 ```bash
 gi clone https://github.com/geerlingguy/ansible-role-nginx.git
 ```
