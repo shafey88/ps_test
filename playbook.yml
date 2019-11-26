@@ -12,7 +12,7 @@
 - name: Install nginx
   hosts: ubuntu
   roles:
-    - { role: geerlingguy.nginx }
+    - { role: ansible-role-nginx }
 
 - hosts: ubuntu
   connection: docker
