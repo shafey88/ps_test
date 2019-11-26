@@ -13,7 +13,7 @@ Download the project, then build and run:
 
 Clone geerlingguy.nginx role to folder with project
 ```bash
-gi clone https://github.com/geerlingguy/ansible-role-nginx.git
+git clone https://github.com/geerlingguy/ansible-role-nginx.git
 ```
 ```bash
 ansible-playbook -i inventory.yml playbook.yml
